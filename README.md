@@ -32,3 +32,17 @@ export default function App({ Component, pageProps }: AppProps) {
   );
 }
 ```
+
+`next.config.js`
+
+```js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    nextScriptWorkers: true,
+  },
+};
+
+module.exports = nextConfig;
+```
